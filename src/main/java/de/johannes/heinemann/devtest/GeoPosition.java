@@ -1,7 +1,9 @@
 package de.johannes.heinemann.devtest;
 
 /**
- * Created by johannes on 25/07/16.
+ * Represents a geo position.
+ *
+ * @author johannes heinemann
  */
 public class GeoPosition {
 

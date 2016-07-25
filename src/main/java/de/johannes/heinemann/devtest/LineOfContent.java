@@ -3,7 +3,9 @@ package de.johannes.heinemann.devtest;
 import java.util.List;
 
 /**
- * Created by johannes on 25/07/16.
+ * Represents one row in a csv file.
+ *
+ * @author johannes heinemann
  */
 public class LineOfContent {
 

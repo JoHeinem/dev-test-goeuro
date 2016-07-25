@@ -14,17 +14,18 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 /**
- * Created by johannes on 19/07/16.
+ * Queries the API Endpoint and returns the respond as a JSON string.
+ *
+ * @author johannes heinemann
  */
 public class APIQuery {
 
     /**
-     *
-     * @param urlString
-     * @return
+     * @param urlString Url to the api endpoint
+     * @return String containing the JSON array.
      * @throws Exception
      */
-    public static String readUrl(String urlString)  {
+    public static String readUrl(String urlString) {
         URI url = null;
         String responseString = "";
         try {

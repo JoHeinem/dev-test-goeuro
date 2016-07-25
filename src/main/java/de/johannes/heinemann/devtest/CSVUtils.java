@@ -7,7 +7,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by johannes on 19/07/16.
+ * Writes the user input into a CVS file.
+ *
+ * The code to export data to a csv file was adapted from mkyong's "How to export data to CSV file – Java".
+ *
+ * @author johannes heinemann
+ * @see <a href="https://www.mkyong.com/java/how-to-export-data-to-csv-file-java/">Mkyong's csv code</a>
  */
 public class CSVUtils {
 
@@ -58,13 +63,19 @@ public class CSVUtils {
 
     }
 
-    public static void writeLines(List<LineOfContent> lines, String csvFile){
+    /**
+     * Takes the content of the user input and writes it to a csv file.
+     *
+     * @param lines the content that should be written to the csv file
+     * @param csvFile the path to the csv file
+     */
+    public static void writeLines(List<LineOfContent> lines, String csvFile) {
 
         try {
             FileWriter writer = new FileWriter(csvFile);
-            writeLine(writer, Arrays.asList("_id", "name", "type", "latitude","longitude"));
+            writeLine(writer, Arrays.asList("_id", "name", "type", "latitude", "longitude"));
 
-            for(LineOfContent line: lines){
+            for (LineOfContent line : lines) {
                 writeLine(writer, line.getLine());
             }
 

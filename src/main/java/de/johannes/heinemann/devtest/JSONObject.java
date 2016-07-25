@@ -1,14 +1,17 @@
 package de.johannes.heinemann.devtest;
 
 /**
- * Created by johannes on 25/07/16.
+ * Represents one JSON object from the JSON Array.
+ *
+ * @author johannes heinemann
  */
-public class City {
+public class JSONObject {
 
-    public City(String type, int _id, String name) {
+    public JSONObject(String type, int _id, String name, GeoPosition geo_position) {
         this.type = type;
         this._id = _id;
         this.name = name;
+        this.geo_position = geo_position;
     }
 
 
